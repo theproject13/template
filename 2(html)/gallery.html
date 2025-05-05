@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Karya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .gallery-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #222;
+    }
+    
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .caption {
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #444;
+      text-align: center;
+    }
+
+    .visit-button {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .visit-button a {
+      text-decoration: none;
+      background-color: #00c853;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .visit-button a:hover {
+      background-color: #00b347;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery-container">
+    <h1>Gallery Karya</h1>
+    <h2>Di dalam halaman ini akan dibawa kedalam sebuah project yang sudah saya kerjakan</h2>
+    <div class="gallery-grid">
+      <!-- Item 1 -->
+      <div class="gallery-item">
+        <img src="./image/matlab.jpg" alt="Web Design 1" />
+        <div class="caption">Landing Page Modern</div>
+        <div class="visit-button">
+          <a href="#"><span>👁</span> Visit Here</a>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=UI+Design+App" alt="UI Design App" />
+        <div class="caption">UI/UX Mobile App</div>
+        <div class="visit-button">
+          <a href="#"><span>👁</span> Visit Here</a>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=Logo+Design" alt="Logo Design" />
+        <div class="caption">Logo Branding Kreatif</div>
+        <div class="visit-button">
+          <a href="#"><span>👁</span> Visit Here</a>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=Dashboard+Web" alt="Dashboard Web" />
+        <div class="caption">Dashboard Web Interaktif</div>
+        <div class="visit-button">
+          <a href="#"><span>👁</span> Visit Here</a>
+        </div>
+      </div>
+      
+      <!-- Tambahkan item lagi sesuai kebutuhan -->
+    </div>
+  </div>
+</body>
+</html>

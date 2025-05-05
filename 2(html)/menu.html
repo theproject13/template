@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f3f4;
+        }
+        .sidebar {
+            width: 100%;
+            height: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 10rem;
+        }
+        
+        
+        .nav-button {
+            width: 70%;
+            padding: 12px;
+            margin: 10px 0;
+            font-weight: 800;
+            color: #2E3A44;
+            border: 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .nav-button:hover {
+            background-color: #59039a;
+            transform: scale(1.2);
+            color: #fff;
+        }
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin-top: 30px;
+        }
+        .social-links a img {
+            width: 20px;
+            height: 20px;
+            fill: white; /* Set the icon color to white */
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .social-links a img:hover {
+            transform: scale(1.2);
+            filter: brightness(1.5); /* Slightly brighter on hover */
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            color: #100101;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        
+
+        <a class="nav-button" href="home.html" target="kanan">Home</a>
+        <a class="nav-button" href="profil.html" target="kanan">Profil</a>
+        <a class="nav-button" href="gallery.html" target="kanan">Gallery</a>
+        <a class="nav-button" href="kontak.html" target="kanan">Kontak</a>
+
+        <!-- Social Media Icons -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub">
+            </a>
+            <a href="mailto:email@example.com">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025. All rights reserved.</p>
+    </div>
+</body>
+</html>
